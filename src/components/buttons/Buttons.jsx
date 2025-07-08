@@ -14,7 +14,7 @@ export const Buttons = ( {texto, funcionClick} ) => {
           borderRadius: "5px",
           cursor: "pointer",
           margin: "10px",
-        
+         
         }}
          onClick={funcionClick}
         > {texto}
