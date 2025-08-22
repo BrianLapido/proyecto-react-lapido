@@ -32,12 +32,17 @@ export const Cart = () => {
 
 
       {cart.length > 0 ? (
+        <>
         <button onClick={clearCart} className="clear-cart-btn">🛒Eliminar carrito</button>
-      ) : <h2 className="empty-cart-message"> Tu carrito esta vacio. Te recomendamos algunos de nuestros productos: <Link to= "/" className="empty-cart-link">Home</Link></h2>} 
+
+        <h4 className="total-pagar"><span></span>El total a pagar es: <span>${getTotal()}</span></h4>
+
+        <Link to= "/checkout" className="btn-finalizar-compra">Finalizar compra</Link>
+        
+        </>) : 
+        
+        <h2 className="empty-cart-message"> Tu carrito esta vacio. Te recomendamos algunos de nuestros productos: <Link to= "/" className="empty-cart-link">Home</Link></h2>} 
       
-      {cart.length >= 1 && (<h4 className="total-pagar"><span></span>El total a pagar es: <span>${getTotal()}</span></h4>)
-       && <Link to= "/checkout" className="btn-finalizar-compra">Finalizar compra</Link>  
-      }
     </div>
   )
 }
