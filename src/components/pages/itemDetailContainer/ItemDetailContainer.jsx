@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react"
-import { productDigital } from "../../../productDigital"
+import Swal from "sweetalert2"
 import { useParams } from "react-router"
 import "./ItemDetailContainer.css"
+import { Counter } from "../../common/counter/Counter"
+import { ItemListContent } from "../itemListContent/ItemListContent"
+import { db } from "../../../firebaseConfig"
+import { collection, getDoc, doc } from "firebase/firestore"
 export const ItemDetailContainer = () => {
 
     const [product, setProduct]= useState({})
@@ -9,13 +13,24 @@ export const ItemDetailContainer = () => {
     const {id} = useParams()
 
     useEffect(() =>{
-        const element = productDigital.find((product) => product.id == id);
-        setProduct(element)
+
+        let productCollection = collection( db, "products" )
+        let referenciaDoc = doc(productCollection , id)
+        getDoc(referenciaDoc).then((res) =>
+        setProduct({ id: res.id, ...res.data() })
+         )
     }, [id]);
 
+    /* console.log(product) */
     if(!product){
-      return <div>Producto no encontrado.</div>
-    }
+      Swal.fire({
+      icon: "error",
+      title: "Upss ⛔",
+      text: "Producto no encontrado",
+      });
+      return <ItemListContent />
+    };
+
   return (
     <div className="product-detail">
 
@@ -25,9 +40,9 @@ export const ItemDetailContainer = () => {
 
         <div className="product-info">
           <h1 className="product-title">{product.title}</h1>
-        <p className="product-price">Precio: ${product.price}</p>
-        <p className="product-description"> <strong>Descripcion: </strong>{product.description}</p>
-        <button className="add-product-btn">Agregar al carrito</button>
+          <p className="product-price">Precio: ${product.price}</p>
+          <p className="product-description"> <strong>Descripcion: </strong>{product.description}</p>
+          <Counter product={product}/>
         </div>
     
     </div>

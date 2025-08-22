@@ -1,15 +1,17 @@
 import "./CartWidget.css"
-import { Contador } from "../../common/contador/Contador";
 import { TiShoppingCart } from "react-icons/ti";
 import { Link } from "react-router";
-export const CartWidget = ({contador}) => {
-
+import { useContext } from "react";
+import { CartContext } from "../../../Context/CartContext";
+export const CartWidget = () => {
+  
+  const {getTotalCantidad} = useContext(CartContext);
+  let total = getTotalCantidad();
 
   return (
     <Link className="add-cart" to= "/carrito">
     <div className="cart-widget">
-      <h5>Carrito</h5>
-      {contador > 0 && <Contador contador={contador} />}
+      <h5>{total}</h5>
       <span className="carrito"><TiShoppingCart size={24}/></span>
     </div>
     </Link>

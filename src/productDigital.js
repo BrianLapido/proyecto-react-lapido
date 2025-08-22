@@ -1,6 +1,6 @@
 export const productDigital = [
     {
-        id: "1", 
+        //id: "1", 
         title: "Reloj smartwatch LUO",
         price: 22000,
         description: "•RECIBE MENSAJES •CALCULADORA •RELOJ •RECIBE LLAMADAS",
@@ -10,7 +10,7 @@ export const productDigital = [
     },
 
     {
-         id: "2", 
+        //id: "2", 
         title: "Reloj smartwatch charm",
         price: 50000,
         description: "•Carga durante 20min dura hasta 24hs •Resistencia al agua: IP68",
@@ -20,7 +20,7 @@ export const productDigital = [
     },
 
      {
-         id: "3", 
+        //id: "3", 
         title: "Freezer horizontal teora",
         price: 1400000,
         description: "TUS ALIMENTOS SIEMPRE FRESCOS Y SEGUROS",
@@ -30,7 +30,7 @@ export const productDigital = [
     },
 
      {
-         id: "4", 
+        //id: "4", 
         title: "Balanza LUO",
         price: 45000,
         description: "•PESO MAXIMO 40 KG •CABLE 220V Y BATERIA RECARGABLE",
@@ -40,7 +40,7 @@ export const productDigital = [
     },
 
      {
-         id: "5", 
+        //id: "5", 
         title: "Pistola de agua electrica",
         price: 40000,
         description: "• ALCANCE DE 5 A 6 METROS • BATERIA RECARGABLE DE 3,7V • CARGADOR USB ",
@@ -50,7 +50,7 @@ export const productDigital = [
     },
 
      {
-         id: "6", 
+        //id: "6", 
         title: "Bici moto rodado 16",
         price: 240000,
         description: "•SOPORTA HASTA 60KG  •C/VERDE Y AZUL •Incluye ruedita",
@@ -60,7 +60,7 @@ export const productDigital = [
     },
 
      {
-         id: "7", 
+        //id: "7", 
         title: "Set parrillero",
         price: 25000,
         description: "• Kit asador de 4 piezas con funda •acero inoxidable",
@@ -70,7 +70,7 @@ export const productDigital = [
     },
 
      {
-         id: "8", 
+        //id: "8", 
         title: "Olla Multifuncional",
         price: 55000,
         description: "•Potencia: 1300W •Capacidad: 4.5L •Voltaje: 220V 50Hz",
@@ -80,7 +80,7 @@ export const productDigital = [
     },
 
     {
-         id: "9", 
+        //id: "9", 
         title: "BOXING TARGET",
         price: 80000,
         description: "•ILUMINACIÓN COLORIDA •INALAMBRICO •CONTROL LIBRE DE VELOCIDAD DE GOLPES",
@@ -90,7 +90,7 @@ export const productDigital = [
     },
 
     {
-        id: "10", 
+        //id: "10", 
         title: "CONJUNTO",
         price: 81000,
         description: "•CONJUNTO BUZO Y PANTALON OVERSIZE",
@@ -100,17 +100,17 @@ export const productDigital = [
     },
 
     {
-        id: "11", 
+        //id: "11", 
         title: "REMERAS",
         price: 38000,
         description: "•PACK X3 REMERAS OVERSIZES",
         imageUrl: "https://res.cloudinary.com/dglpzels3/image/upload/v1753213010/remeras_wjakga.webp",
-        stock: 50,
+        stock: 10,
         category: "indumentaria"
     },
 
     {
-        id: "12", 
+        //id: "12", 
         title: "BUZOS X2",
         price: 37000,
         description: "•PACK X2 BUZOS HOODIE OVER",

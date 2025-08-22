@@ -4,53 +4,52 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 100vh; /* Ocupa el 100% de la altura de la ventana */
-  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%); /* Gradiente de fondo llamativo */
-  color: #fff; /* Color de texto blanco */
-  font-family: 'Arial', sans-serif; /* Puedes usar cualquier fuente que prefieras */
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  color: #fff;
+  font-family: 'Arial', sans-serif;
   padding: 20px;
 }
 
-/* Estilos para el título principal "Error 404" */
+
 .not-found-container h1 {
-  font-size: 8em; /* Tamaño de fuente grande para el error */
+  font-size: 8em; 
   font-weight: bold;
-  margin: 0; /* Sin márgenes para que esté centrado */
-  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2); /* Sombra de texto para pop-up */
-  animation: float 3s ease-in-out infinite; /* Animación de flotar */
+  margin: 0; 
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+  animation: float 3s ease-in-out infinite;
 }
 
-/* Estilos para el subtítulo "not found" */
+
 .not-found-container p {
   font-size: 1.5em;
   margin-top: 10px;
   max-width: 600px;
   line-height: 1.5;
-  opacity: 0.8; /* Un poco de transparencia */
+  opacity: 0.8; 
 }
 
-/* Estilos para el botón o link para volver al inicio */
+
 .not-found-container a {
-  background-color: #e74c3c; /* Un rojo vibrante */
+  background-color: #e74c3c;
   color: #fff;
-  text-decoration: none; /* Elimina el subrayado por defecto */
+  text-decoration: none;
   padding: 15px 30px;
   margin-top: 30px;
-  border-radius: 50px; /* Botón redondeado */
+  border-radius: 50px; 
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el botón */
-  transition: all 0.3s ease; /* Transición suave al interactuar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease; 
 }
 
 .not-found-container a:hover {
-  background-color: #c0392b; /* Rojo más oscuro al pasar el ratón */
-  transform: translateY(-3px); /* Efecto de elevación */
+  background-color: #c0392b;
+  transform: translateY(-3px); 
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Animación de "flotar" para el h1 */
 @keyframes float {
   0% { transform: translateY(0); }
   50% { transform: translateY(-20px); }

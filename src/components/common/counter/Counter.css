@@ -1,0 +1,47 @@
+.contador {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn-counter {
+  color: white;
+  background-color: #000000;
+  border: none;
+  font-size: 1.2rem;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-counter:hover {
+  background-color: #4a4a4a;
+  transform: scale(1.05);
+}
+
+.contador-valor {
+  font-size: 1.1rem;
+  font-weight: bold;
+  min-width: 30px;
+  text-align: center;
+}
+
+.add-product-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.add-product-btn:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
